@@ -459,3 +459,28 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+/* Align category filter and search */
+.search-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#categoryFilter {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-search {
+  box-sizing: border-box;
+}
+
+/* Center the product grid placeholder */
+.products-grid .placeholder-message {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+}

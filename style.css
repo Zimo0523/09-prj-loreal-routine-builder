@@ -253,3 +253,123 @@ body {
 .generate-btn i {
   margin-right: 8px;
 }
+
+/* Product search */
+.product-search {
+  display: block;
+  width: 100%;
+  margin: 14px 0 20px;
+  padding: 13px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+/* Selected product cards */
+.product-card {
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.product-card.selected {
+  border: 2px solid #ff003b;
+  background: #fff6f7;
+  box-shadow: 0 0 0 2px rgba(255, 0, 59, 0.12);
+}
+
+.product-card:focus-visible {
+  outline: 3px solid #e3a535;
+}
+
+.selection-indicator {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b0002b;
+}
+
+/* Product descriptions */
+.description-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
+.product-description {
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.product-description[hidden] {
+  display: none;
+}
+
+/* Selected product list */
+.selected-product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.remove-product-btn,
+#clearSelections {
+  padding: 9px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
+#clearSelections {
+  margin: 12px 0;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Conversation bubbles */
+.chat-window {
+  overflow-y: auto;
+  white-space: normal;
+}
+
+.msg {
+  width: fit-content;
+  max-width: 85%;
+  margin: 12px 0;
+  padding: 13px 16px;
+  border-radius: 12px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.msg.user {
+  margin-left: auto;
+  background: #171717;
+  color: #ffffff;
+}
+
+.msg.ai {
+  margin-right: auto;
+  background: #f8f5f1;
+  color: #222222;
+  border: 1px solid #e7ded3;
+}
